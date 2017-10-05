@@ -1,11 +1,17 @@
 // Import a Library to help create component
 
 import React from 'react';
-// import { Text } from 'react-native';
-import Header from './src/components/header';
+import { View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 // Create Component
 
-const HelloWorld = () => <Header headerText={'Albums'} />;
+const App = () => (
+  <View>
+    <Header headerText={'Albums'} />
+    <AlbumList />
+  </View>
+);
 
-export default HelloWorld;
+export default App;
